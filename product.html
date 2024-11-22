@@ -18,7 +18,7 @@
         <h1 class="text-2xl">GREENDEN</h1>
 
         <!-- Menu Bar -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -28,7 +28,7 @@
                 <a class="hover:underline  hover:text-black" href="index.html">Home</a>
             </li>
             <li>
-                <a class="hover:underline  hover:text-black" href="proucts.html">Products</a>
+                <a class="hover:underline  hover:text-black" href="product.html">Products</a>
             </li>
             <li>
                 <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
@@ -36,18 +36,38 @@
         </ul>
     </nav>
 
+    <!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height:100vh; right: -50%;">
+        <div class="text-right">
+            <p id="closenav" class="inline cursor-pointer p-5">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline  hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- Our Products -->
     <section class="p-4 text-center">
         <h1 class="font-bold mt-5 text-3xl">Our Products</h1>
-        <input type="text" class="border border-black p-2 m-3" placeholder="Search for a Product..." style=width:70%;>
+        <input id="search" type="text" class="border border-black p-2 m-3" placeholder="Search for a Product..." style=width:70%;>
     </section>
 
     <!--Proudcts-->
     <section class="p-4 text-center">
 
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 font-semibold">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 font-semibold">
 
             <div class="relative group">
+
                 <img src="./images/Product_1.jpg"
                     class="inline w-50 h-60 transition-opacity duration-500 ease-in-out group-hover:opacity-30"
                     alt="Jade Plant (Crassula ovata)">
@@ -56,6 +76,7 @@
                     <div class="text-white text-base p-4 text-left">Jade Plants<br> offer
                     </div>
                 </div>
+
                 <h1>Jade Plant (Crassula ovata)</h1>
                 <p>$70</p>
             </div>
@@ -438,52 +459,55 @@
     
     </section>
 -->
+
     <!-- Footer -->
     <section class="bg-green-100 text-center">
-    <div class="mx-6 py-10 text-center md:text-left">
+        <div class="mx-6 py-10 text-center md:text-left">
 
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-            <div class="">
-                <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">Newsletter</h6>
-                <p class="mb-4">Join Our Newsletter</p>
-                <p class="mb-4">Your one-stop shop for artificial and natural flowers.</p>
-                <p class="mb-4">© 2024 GREENDEN. All rights reserved.</p>
-            </div>
+                <div class="">
+                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                        Newsletter</h6>
+                    <p class="mb-4">Join Our Newsletter</p>
+                    <p class="mb-4">Your one-stop shop for artificial and natural flowers.</p>
+                    <p class="mb-4">© 2024 GREENDEN. All rights reserved.</p>
+                </div>
 
-            <div>
-                <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">Contact Information</h6>
-                <p class="mb-4"><a href="#!">Email: info@greenden.com </a></p>
-                <p class="mb-4"><a href="#!">Phone: +1 (800) 123-4567</a></p>
-                <p class="mb-4"><a href="#!">Address: 123 Green Street, Plant City, CA 90210</a>
-                </p>
-            </div>
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">Contact Information
+                    </h6>
+                    <p class="mb-4"><a href="#!">Email: info@greenden.com </a></p>
+                    <p class="mb-4"><a href="#!">Phone: +1 (800) 123-4567</a></p>
+                    <p class="mb-4"><a href="#!">Address: 123 Green Street, Plant City, CA 90210</a>
+                    </p>
+                </div>
 
-            <div>
-                <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">Navigation</h6>
-                <p class="mb-4"><a href="#!">Home</a></p>
-                <p class="mb-4"><a href="#!">About Us</a></p>
-                <p class="mb-4"><a href="#!">Products</a></p>
-            </div>
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">Navigation</h6>
+                    <p class="mb-4"><a href="#!">Home</a></p>
+                    <p class="mb-4"><a href="#!">About Us</a></p>
+                    <p class="mb-4"><a href="#!">Products</a></p>
+                </div>
 
-            <div>
-                <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">Follow Us</h6>
-                <p class="mb-4 flex items-center justify-center md:justify-start">Facebook</p>
-                <p class="mb-4 flex items-center justify-center md:justify-start">Instagram</p>
-                <p class="mb-4 flex items-center justify-center md:justify-start">Twitter</p>
-                <p class="flex items-center justify-center md:justify-start">Pinterest</p>
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">Follow Us</h6>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">Facebook</p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">Instagram</p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">Twitter</p>
+                    <p class="flex items-center justify-center md:justify-start">Pinterest</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--Copyright section-->
-    <div class="bg-black/5 p-6 text-center">
-        <span>© 2024 GREENDEN. All rights reserved:</span>
-        <a class="font-bold text-2xl" href="https://Greenden.com/">GREENDEN</a>
-    </div>
-</section>
+        <!--Copyright section-->
+        <div class="bg-black/5 p-6 text-center">
+            <span>© 2024 GREENDEN. All rights reserved:</span>
+            <a class="font-bold text-2xl" href="https://Greenden.com/">GREENDEN</a>
+        </div>
+    </section>
 
-
+    <script src="product.js"></script>
 </body>
 
 </html>
